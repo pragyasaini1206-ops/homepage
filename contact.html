@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Pragya Saini</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container inner">
+        <a href="index.html" class="brand"><span class="logo"></span><span class="name">Pragya Saini</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="reveal">Contact</h1>
+          <p class="reveal muted">Placeholder: Reach out for collaborations, consulting, or questions.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="contact-card reveal">
+            <div class="details">
+              <h2 class="section-title">Let's talk</h2>
+              <p class="detail">Email: placeholder@example.com</p>
+              <p class="detail">Social: LinkedIn / GitHub (placeholders)</p>
+              <p class="detail">Response time: 1-2 business days</p>
+            </div>
+            <form onsubmit="event.preventDefault(); alert('Thanks! This is a static demo.');">
+              <input class="input" type="text" placeholder="Your name" required />
+              <input class="input" type="email" placeholder="Your email" required />
+              <textarea placeholder="How can I help?"></textarea>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="alt">
+        <div class="container center">
+          <h2 class="section-title reveal">Prefer email?</h2>
+          <p class="section-subtitle reveal">Use your email client with the button below.</p>
+          <div class="reveal"><a class="btn btn-outline" href="mailto:placeholder@example.com">Open email</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="y"></span> Pragya Saini. All rights reserved.</div>
+    </footer>
+
+    <div id="page-transition"></div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <script src="assets/js/router.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+

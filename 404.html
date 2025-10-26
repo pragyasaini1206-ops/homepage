@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Not found — Pragya Saini</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container inner">
+        <a href="index.html" class="brand"><span class="logo"></span><span class="name">Pragya Saini</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container center">
+          <h1 class="reveal">Page not found</h1>
+          <p class="reveal muted">The link may be old or broken. Head back home.</p>
+          <div class="reveal"><a class="btn btn-primary" href="index.html">Go home</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="y"></span> Pragya Saini. All rights reserved.</div>
+    </footer>
+
+    <div id="page-transition"></div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <script src="assets/js/router.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+

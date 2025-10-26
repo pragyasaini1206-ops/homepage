@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" width="120" height="32">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect rx="6" width="120" height="32" fill="url(#g)"/>
+  <text x="60" y="21" text-anchor="middle" font-family="Inter,Segoe UI,Arial" font-size="12" fill="white">LOGO 1</text>
+</svg>
+
+

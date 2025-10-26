@@ -1,0 +1,52 @@
+/* Keyframe animations and reveal effects */
+
+@keyframes floatUp {
+  0% { transform: translateY(8px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes floatDown {
+  0% { transform: translateY(-8px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  will-change: transform, opacity;
+}
+.reveal.is-visible {
+  animation: floatUp .6s cubic-bezier(.2,.8,.2,1) forwards;
+}
+
+.divider-wave {
+  position: absolute;
+  left: 0; right: 0; bottom: -1px;
+  height: 80px;
+  background: radial-gradient(60px 40px at 10% 60%, rgba(124,58,237,0.2), transparent 70%),
+              radial-gradient(60px 40px at 50% 50%, rgba(6,182,212,0.2), transparent 70%),
+              radial-gradient(60px 40px at 90% 40%, rgba(124,58,237,0.2), transparent 70%);
+  filter: blur(18px);
+}
+
+.parallax-scene {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.parallax-layer { position: absolute; inset: 0; }
+.parallax-layer[data-depth="0.2"] { transform: translateZ(-60px) scale(1.1); }
+.parallax-layer[data-depth="0.5"] { transform: translateZ(-20px) scale(1.05); }
+
+.crossfade-enter, .crossfade-exit {
+  position: fixed; inset: 0; pointer-events: none; z-index: 1500;
+}
+.crossfade-enter { background: radial-gradient(800px 800px at center, rgba(124,58,237,0.3), rgba(6,182,212,0.3), transparent 60%); opacity: 0; }
+.crossfade-enter.is-active { transition: opacity .6s cubic-bezier(.2,.8,.2,1); opacity: 1; }
+
+
